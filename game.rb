@@ -1,6 +1,3 @@
-require './player'
-require './questions'
-
 class Game
   attr_accessor :player1, :player2, :question, :current_player
 

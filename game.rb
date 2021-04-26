@@ -21,14 +21,16 @@ class Game
 
         if (answer.to_i == self.question.answer)
           puts "#{self.player1.name}: #{self.player1.lives}/3 vs #{self.player2.name}: #{self.player2.lives}/3"
+          puts ""
         else
           puts "#{current_player.name}: You Fool!"
           self.current_player.deduct_life
           puts "#{self.player1.name}: #{self.player1.lives}/3 vs #{self.player2.name}: #{self.player2.lives}/3"
+          puts ""
         end
       
         if(self.player1.lives == 0 || self.player2.lives == 0)
-          puts "------------------"
+          puts "-------------------"
           puts self.current_player == self.player1 ? "#{self.player2.name} wins with a score of #{self.player2.lives}/3" : "#{self.player1.name} wins with a score of #{self.player1.lives}/3"
           puts "---- Game Over ----"
           puts "Good bye!"

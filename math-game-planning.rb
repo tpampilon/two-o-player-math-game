@@ -3,8 +3,7 @@ class Player
   # stores player_name
   
   # initializes with name and lives
-  # reader attr for player_name
-  # attr_accessor for lives
+  # attr_accessor for lives and player_name
 
   # method to substract player lives for wrong answers
   # method to reset lives after the game
